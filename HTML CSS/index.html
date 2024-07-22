@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Online Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .full-width-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script> <!-- JavaScript file -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1>My Online Book Store</h1>
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a class="decoration" href="#">Home &#9662;</a>
+                        <div class="dropdown-content">
+                            <a href="#">About Us</a>
+                            <a href="#">Services</a>
+                            <a href="#">Available Books</a>
+                            <a href="#">Customer Reviews</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="decoration" href="#">Books &#9662;</a>
+                        <div class="dropdown-content">
+                            <a href="#">Fiction Books</a>
+                            <a href="#">Non-Fiction Books</a>
+                            <a href="#">Story Books</a>
+                            <a href="#">Children's Books</a>
+                            <a href="#">Popular Books</a>
+                        </div>
+                    </li>
+                    <li><a class="decoration" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <input type="text" id="search-bar" placeholder="Search books...">
+        </nav>
+    </header>
+    <main>
+        <section id="featured-books">
+            <h2>Featured Books</h2>
+            <p class="Para">Discover captivating stories and enrich your imagination with our handpicked selection of featured books. From timeless classics to contemporary bestsellers, each book promises to transport you to new worlds, evoke profound emotions, and inspire endless conversations. Whether you're seeking thrilling adventures, insightful biographies, or thought-provoking literature, our curated collection offers something for every reader. Dive into our featured books and embark on a literary journey that will ignite your passion for reading.</p>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="image/6.jpg" height="2340" width="1524" alt="Book Cover 1">
+                        <h3>All Thats Left In The World</h3>
+                        <p>Author: Erik J. Brown</p>
+                        <p>Price: $10</p>
+                    </div>
+                    <div class="slide">
+                        <img src="image/4.jpeg" height="2340" width="1524" alt="Book Cover 3">
+                        <h3>The Beloved Girl</h3>
+                        <p>Author: Harriet Evans</p>
+                        <p>Price: $20</p>
+                    </div>
+                    <div class="slide">
+                        <img src="image/5.jpg" height="2340" width="1524" alt="Book Cover 4">
+                        <h3>Pieces Of Light</h3>
+                        <p>Author: Charles Fernyhough</p>
+                        <p>Price: $25</p>
+                    </div>
+                    <div class="slide">
+                        <img src="image/3.jpeg" height="2340" width="1524" alt="Book Cover 5">
+                        <h3>The Amazing Mr. Blunden</h3>
+                        <p>Author: Antonia Barber</p>
+                        <p>Price: $30</p>
+                    </div>
+                    <div class="slide">
+                        <img src="image/1.jpg" height="2340" width="1524" alt="Book Cover 6">
+                        <h3>All This Time</h3>
+                        <p>Author: Mikki Daughtry and Rachael Lippincott</p>
+                        <p>Price: $35</p>
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+        <section>
+            <h2>About Us</h2>
+            <p class="Para">Welcome to <a href="#" class="store-link" title="Visit My Online Book Store"><span class="store-name">My Online Book Store</span></a>, where passion for literature meets the convenience of online shopping. Founded with a love for books and a commitment to readers, we aim to provide a diverse selection of titles that cater to every interest and age group. Our mission is to foster a community of book lovers by offering a seamless browsing and shopping experience, personalized recommendations, and exceptional customer service. Whether you're discovering new authors, revisiting beloved classics, or exploring niche genres, <a href="#" class="store-link" title="Visit My Online Book Store"><span class="store-name">My Online Book Store</span></a> is your trusted destination for all things literary. Join us in celebrating the joy of reading, one page at a time.</p>
+        </section>
+        <section>
+            <div class="customer-reviews1">
+                <h2>Customer Reviews</h2>
+                <h3>"Our Valuable and Top Customers Reviews"</h3>
+                <p class="Para">Shopping at <a href="#" class="store-link" title="Visit My Online Book Store"><span class="store-name">My Online Book Store</span></a> has been an absolute pleasure! I'm impressed by the vast selection of books available and how easy it is to navigate through genres and authors. The ordering process is straightforward, and my books always arrive on time and in perfect condition. The customer service team is friendly and responsive, offering helpful recommendations and addressing any queries promptly. <a href="#" class="store-link" title="Visit My Online Book Store"><span class="store-name">My Online Book Store</span></a> has become my go-to place for buying books online, thanks to their excellent service and commitment to delivering a seamless shopping experience. I highly recommend them to any book lover looking for quality reads and exceptional service.</p>
+            </div>
+            <div class="review">
+                <div class="rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p><strong>Maryam Nasir Suleman:</strong> <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Customer's Profile</a></p>
+            </div>
+            <div class="customer-reviews">
+                <p class="Para">"I've had mostly positive experiences with My Online Book store. The selection is good, and the prices are reasonable. My orders have generally arrived on time, but there was one instance where the delivery was delayed. Customer service handled it well and resolved the issue promptly. Overall, I'm satisfied with my purchases and will continue to shop here for my reading needs."</p>
+            </div>
+            <div class="review">
+                <div class="rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p><strong>Hasham Kashif:</strong> <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Customer's Profile</a></p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Available Books</h2>
+            <table id="books-table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Description</th>
+                        <th>Image</th>
+                        <th>Price</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Books will be dynamically added here -->
+                </tbody>
+            </table>
+            <button id="load-more-btn">Load More Books</button>
+        </section>
+        <section>
+            <div class="form-container">
+                <form id="add-book-form">
+                    <h2>Add New Book</h2>
+                    <div class="form-group">
+                        <label for="title">Title <span class="required">*</span></label>
+                        <input type="text" id="title" name="title" required>
+                        <span class="error-message">Please enter the title.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="author">Author <span class="required">*</span></label>
+                        <input type="text" id="author" name="author" required>
+                        <span class="error-message">Please enter the author.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="imageUrl">Image URL <span class="required">*</span></label>
+                        <input type="text" id="imageUrl" name="imageUrl" required>
+                        <span class="error-message">Please enter the image URL.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price <span class="required">*</span></label>
+                        <input type="number" id="price" name="price" step="0.01" required>
+                        <span class="error-message">Please enter the price.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="availability">Availability <span class="required">*</span></label>
+                        <input type="text" id="availability" name="availability" required>
+                        <span class="error-message">Please enter the availability status.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description <span class="required">*</span></label>
+                        <textarea id="description" name="description" required></textarea>
+                        <span class="error-message">Please enter the description.</span>
+                    </div>
+                    <button type="submit" class="submit-btn">Add Book</button>
+                </form>
+                
+                <form id="contact-form">
+                    <h2>Contact Us</h2>
+                    <div class="form-group">
+                        <label for="name">Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message">Please enter your name.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message">Please enter a valid email address.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject <span class="required">*</span></label>
+                        <input type="text" id="subject" name="subject" required>
+                        <span class="error-message">Please enter the subject.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" required></textarea>
+                        <span class="error-message">Please enter your message.</span>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 My Online Bookstore</p>
+    </footer>
+    <script>
+       
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(n) {
+            slides.forEach((slide, index) => {
+                slide.style.display = (index >= n && index < n + 3) ? 'block' : 'none';
+            });
+        }
+
+        function moveSlide(step) {
+            currentSlide += step;
+            if (currentSlide < 0) currentSlide = 0;
+            if (currentSlide > slides.length - 3) currentSlide = slides.length - 3;
+            showSlide(currentSlide);
+        }
+
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>
